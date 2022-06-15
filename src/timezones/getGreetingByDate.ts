@@ -1,4 +1,4 @@
-export function getGreetingByDateClass(date: Date): string {
+export function getGreetingByDate(date: Date): string {
   const hour = date.getHours();
 
   if (4 <= hour && hour < 12) {

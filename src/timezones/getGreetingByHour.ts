@@ -1,3 +1,4 @@
+// Dateオブジェクトを使わずに時間(0 ~ 23)でも可能
 export function getGreetingByHour(hour: number): string {
   if (4 <= hour && hour < 12) {
     return "Good morning";

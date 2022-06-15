@@ -1,13 +1,11 @@
-import { getGreetingByDateClass } from "./getGreetingByDateClass";
-import { getGreetingByHour } from "./getGreetingByHour";
+import { getGreetingByDate } from "./getGreetingByDate";
 
 export function showGreeting(): void {
-  const hour = new Date().getHours();
-  console.log(getGreetingByHour(hour));
+  const date = new Date();
 
-  console.log("----------");
+  const message = getGreetingByDate(date);
 
-  console.log(getGreetingByDateClass(new Date()));
+  console.log(message);
 }
 
 showGreeting();
