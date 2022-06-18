@@ -6,7 +6,9 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test": "jest"
+    "test": "jest",
+    "test:all": "jest -a",
+    "test:onlychanged": "jest -o"
   },
   "dependencies": {
     "react": "^18.0.0",
