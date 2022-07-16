@@ -1,11 +1,10 @@
 import "./App.css";
-import { MessageWrapper } from "./showMessage/MessageWrapper";
-function App() {
+import { Router } from "./Router";
+
+export function App() {
   return (
     <div className="App">
-      <MessageWrapper />
+      <Router />
     </div>
   );
 }
-
-export default App;
