@@ -1,9 +1,8 @@
 Todo:
-  ✔ GitHubにあげる @done(22-06-15 17:51)
-    ✔ コミット整理する @done(22-06-15 17:51)
-    ✔ それぞれにREADMEをかく @done(22-06-15 17:51)
+  GitHubにあげる
+    コミット整理する
+    それぞれにREADMEをかく
 
-  react-router入れる
   ルーディングいれる
-  ☐ 共通ヘッダー作る(LayoutComponent)
+  共通ヘッダー作る(LayoutComponent)
   ☐ timezones名前再考する

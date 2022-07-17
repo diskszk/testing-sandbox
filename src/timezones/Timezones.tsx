@@ -1,16 +1,31 @@
+import { useCallback, useState } from "react";
 import { getGreetingByDate } from "./getGreetingByDate";
 
 type ComponentProps = {
+  date: Date;
   message: string;
+  handleClick: () => void;
 };
-const Component: React.FC<ComponentProps> = ({ message }) => (
+const Component: React.FC<ComponentProps> = ({
+  date,
+  message,
+  handleClick,
+}) => (
   <div>
-    <p>{message}</p>
+    <p>現在の時刻: {date.toISOString()}</p>
+    <p>挨拶: {message}</p>
+    <button onClick={handleClick}>更新</button>
   </div>
 );
 
 export const Container: React.FC = () => {
-  const message = getGreetingByDate(new Date());
+  const [date, setDate] = useState(new Date());
 
-  return <Component message={message} />;
+  const handleClick = useCallback(() => {
+    setDate(new Date());
+  }, []);
+
+  const message = getGreetingByDate(date);
+
+  return <Component date={date} message={message} handleClick={handleClick} />;
 };
