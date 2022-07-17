@@ -20,7 +20,7 @@
 
 ## インストール方法
 
-`$ git clone https://github.com/diskszk/https://github.com/diskszk/testing-sandbox`  
+`$ git clone https://github.com/diskszk/testing-sandbox`  
 `$ cd testing-sandbox`  
 `$ yarn install`
 
