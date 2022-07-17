@@ -1,12 +1,9 @@
-import { Link } from "react-router-dom";
+import { Layout } from "../components/Layout";
 
 export const HomePage: React.FC = () => {
   return (
-    <div>
-      <h1>HOME</h1>
-      <nav>
-        <Link to={"timezones"}>Timezones</Link>
-      </nav>
-    </div>
+    <Layout title="Home">
+      <div></div>
+    </Layout>
   );
 };
