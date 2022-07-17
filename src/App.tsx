@@ -1,11 +1,13 @@
+import { HelmetProvider } from "react-helmet-async";
 import "./App.css";
-import { MessageWrapper } from "./showMessage/MessageWrapper";
-function App() {
+import { Router } from "./Router";
+
+export function App() {
   return (
     <div className="App">
-      <MessageWrapper />
+      <HelmetProvider>
+        <Router />
+      </HelmetProvider>
     </div>
   );
 }
-
-export default App;
