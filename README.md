@@ -12,15 +12,16 @@
 - typescript: 4.6.X
 - react: 18.0.X
 - react-dom: 18.0.X
+- react-router-dom: 6.3.X
 - vite: 2.9.X
 - jest: 28.1.X
 - testing-library/react: 13.3.X
-- testing-library/react-hooks: 8.0.X
+- sass: 1.53.X
 
 ## インストール方法
 
-`$ git clone https://github.com/diskszk/population-transition-graph-by-prefectures.git`  
-`$ cd population-transition-graph-by-prefectures`
+`$ git clone https://github.com/diskszk/https://github.com/diskszk/testing-sandbox`  
+`$ cd testing-sandbox`  
 `$ yarn install`
 
 ## テスト方法
