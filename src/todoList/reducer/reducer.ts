@@ -18,7 +18,7 @@ type DeleteTaskAction = {
   payload: number;
 };
 
-export type Action = AddTaskAction | ChangeDoneAction | DeleteTaskAction;
+type Action = AddTaskAction | ChangeDoneAction | DeleteTaskAction;
 export const reducer: Reducer<Task[], Action> = (state, action): Task[] => {
   switch (action.type) {
     case ADD_TASK: {

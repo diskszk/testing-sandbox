@@ -3,3 +3,9 @@ export type Task = {
   text: string;
   done: boolean;
 };
+
+export type TasksDispatch = {
+  addTask: (task: Task) => void;
+  changeDone: (id: number) => void;
+  deleteTask: (id: number) => void;
+};
