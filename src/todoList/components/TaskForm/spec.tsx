@@ -15,7 +15,7 @@ describe("TaskForm", () => {
     expect(screen.getByRole("button")).toHaveTextContent("作成");
   });
 
-  test("入力フォームの内容が空の状態の場合、作成ボタンは非活性である", async () => {
+  test("入力フォームの内容が空の状態の場合、作成ボタンは非活性である", () => {
     expect(screen.getByLabelText("タスクを入力してください")).toHaveValue("");
     expect(screen.getByRole("button")).not.toBeEnabled();
   });

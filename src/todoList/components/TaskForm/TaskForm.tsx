@@ -16,13 +16,13 @@ export const TaskForm: React.FC = () => {
     const id = new Date().getTime();
     addTask({ id, text, done: false });
     setText("");
-  }, []);
+  }, [addTask, text]);
 
   return (
     <div>
       <label htmlFor="task">タスクを入力してください</label>
       <input type="text" id="task" value={text} onChange={handleChange} />
-      <button onClick={handleClick} disabled={text ? false : true}>
+      <button onClick={handleClick} disabled={!text}>
         作成
       </button>
     </div>
