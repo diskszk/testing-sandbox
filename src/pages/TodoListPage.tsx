@@ -1,11 +1,15 @@
 import { Layout } from "../components/Layout";
 import { TaskForm } from "../todoList/components/TaskForm";
+import { TaskList } from "../todoList/components/TaskList/TaskList";
+import { TasksProvider } from "../todoList/context/TasksProvider";
 
 export const TodoListPage: React.FC = () => {
   return (
     <Layout title="todolist">
-      <div>todo</div>
-      <TaskForm />
+      <TasksProvider>
+        <TaskForm />
+        <TaskList />
+      </TasksProvider>
     </Layout>
   );
 };

@@ -19,6 +19,12 @@ export const Header: React.FC<Props> = ({ heading }) => {
           >
             Timezones
           </Link>
+          <Link
+            to={"/todolist"}
+            className={`${heading === "todolist" && styles.active}`}
+          >
+            TodoList
+          </Link>
 
           <a href="#news">News</a>
           <a href="#contact">Contact</a>
