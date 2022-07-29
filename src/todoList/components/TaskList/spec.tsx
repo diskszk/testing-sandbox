@@ -41,6 +41,7 @@ describe("TaskList", () => {
         },
       ],
     });
+    expect(screen.getAllByTestId(/task:/)).toHaveLength(3);
     expect(screen.getAllByRole("button", { name: "done" })).toHaveLength(3);
     expect(screen.getAllByRole("button", { name: "削除" })).toHaveLength(3);
   });

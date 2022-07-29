@@ -11,7 +11,10 @@ export const TaskList: React.FC = () => {
     <ul>
       {state.map((task) => (
         <li key={task.id}>
-          <p style={{ textDecoration: task.done ? "line-through" : "none" }}>
+          <p
+            data-testid={`task:${task.id}`}
+            style={{ textDecoration: task.done ? "line-through" : "none" }}
+          >
             {task.text}
           </p>
           <button onClick={() => changeDone(task.id)}>done</button>
