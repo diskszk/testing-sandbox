@@ -37,6 +37,29 @@
   }
 }
 
+.content {
+  margin: 0 20%;
+}
+
 .done {
   text-decoration: line-through;
+}
+
+.describe {
+  text-align: left;
+}
+
+.task_list {
+  display: flex;
+  flex-direction: column;
+}
+
+.task_list_item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.task_list_item p,
+button {
+  margin: 0 2px;
 }

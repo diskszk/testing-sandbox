@@ -13,7 +13,7 @@ export const Layout: React.FC<Props> = ({ children, title }) => {
         <title>{`testing sandbox | ${title}`}</title>
       </Helmet>
       <Header heading={title} />
-      {children}
+      <div className="content">{children}</div>
     </>
   );
 };

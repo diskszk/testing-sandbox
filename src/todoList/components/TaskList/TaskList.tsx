@@ -1,5 +1,4 @@
 import { useTasks } from "../../hooks";
-import styles from "./TaskList.module.scss";
 
 export const TaskList: React.FC = () => {
   const { state, changeDone, deleteTask } = useTasks();
@@ -9,9 +8,9 @@ export const TaskList: React.FC = () => {
   }
 
   return (
-    <ul className={styles.task_list}>
+    <ul className="task_list">
       {state.map((task) => (
-        <li key={task.id} className={styles.task_list_item}>
+        <li key={task.id} className="task_list_item">
           <p
             data-testid={`task:${task.id}`}
             style={{ textDecoration: task.done ? "line-through" : "none" }}
