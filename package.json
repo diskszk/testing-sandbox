@@ -8,7 +8,8 @@
     "preview": "vite preview",
     "test": "jest",
     "test:a": "jest -a",
-    "test:o": "jest -o"
+    "test:o": "jest -o",
+    "lint": "eslint src/"
   },
   "dependencies": {
     "react": "^18.0.0",
