@@ -25,18 +25,21 @@ const TestingComponent = () => {
 };
 
 describe("MessageProvider", () => {
-  beforeEach(() => {
+  test("MessageContextが子コンポーネントを表示する", () => {
     render(
       <MessageProvider>
         <TestingComponent />
       </MessageProvider>
     );
-  });
-  test("MessageContextが子コンポーネントを表示する", () => {
     expect(screen.getByTestId("text")).toHaveTextContent("");
   });
 
   test("buttonをクリックすると`test message`と表示される", () => {
+    render(
+      <MessageProvider>
+        <TestingComponent />
+      </MessageProvider>
+    );
     const button = screen.getByTestId("button");
 
     fireEvent.click(button);
