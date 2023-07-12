@@ -18,7 +18,8 @@
     "plugin:react-hooks/recommended",
     "plugin:jest/recommended",
     "plugin:jest/style",
-    "plugin:testing-library/react"
+    "plugin:testing-library/react",
+    "plugin:storybook/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -33,17 +34,29 @@
     "@typescript-eslint",
     "react-hooks",
     "jest",
-    "testing-library"
+    "testing-library",
+    "storybook"
   ],
   "rules": {
-    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
     "linebreak-style": ["error", "unix"],
     "quotes": ["warn", "double"],
     "semi": ["error", "always"],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/prop-types": "off",
-    "jest/consistent-test-it": ["error", { "fn": "test" }],
+    "jest/consistent-test-it": [
+      "error",
+      {
+        "fn": "test"
+      }
+    ],
     "jest/require-top-level-describe": ["off"]
   }
 }
