@@ -30,12 +30,7 @@ export const CreatePostForm: React.FC<Props> = ({ handleSubmitPost }) => {
     register,
     handleSubmit,
     reset,
-    formState: {
-      isDirty,
-      errors,
-      isSubmitting,
-      isSubmitSuccessful,
-    },
+    formState: { isDirty, errors, isSubmitting, isSubmitSuccessful },
   } = useForm<Input>({
     resolver: zodResolver(schema),
     defaultValues: {
