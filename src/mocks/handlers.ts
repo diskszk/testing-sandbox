@@ -2,16 +2,9 @@ import { rest } from "msw";
 
 const url = "api/";
 
-const postResult = {
-  id: 101,
-  title: "sample title",
-  body: "sample body",
-  userId: 1,
-};
-
 export const handlers = [
-  rest.post(`${url}/posts`, (_req, res, ctx) => {
-    return res(ctx.status(201), ctx.json(postResult));
+  rest.post("api/posts", (_req, res, ctx) => {
+    return res(ctx.status(201));
   }),
 
   rest.get(`${url}/posts/:id`, (_req, res, ctx) => {
